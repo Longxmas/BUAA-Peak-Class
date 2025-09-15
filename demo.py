@@ -82,7 +82,7 @@ def main():
     with open("long_prompt.txt", "r", encoding="utf-8") as f:
         long_prompt = f.read()
         
-    long_prompt = "I like large language models"
+    # long_prompt = "I like large language models"
 
     # Baseline: 原始 SPDA
     model = load_model(model_name, attn_impl="sdpa", device=device)
